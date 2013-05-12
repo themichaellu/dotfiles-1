@@ -8,7 +8,7 @@ antigen bundle git
 antigen bundle szferi/oh-my-zsh plugins/mercurial
 
 # Thene
-antigen theme szferi/dotfiles themes/szferi
+antigen theme szferi/dotfiles themes/szferi.zsh-theme
 
 # Apply
 antigen apply
