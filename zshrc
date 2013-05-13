@@ -1,3 +1,4 @@
+export ANTIGEN_DEFAULT_REPO_URL=https://github.com/szferi/oh-my-zsh.git
 source $HOME/antigen/antigen.zsh
 
 # Load the oh-my-zsh's library.
