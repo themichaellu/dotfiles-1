@@ -10,6 +10,12 @@ Bundle 'gmarik/vundle'
 " My bundles
 Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdtree'
+
+" Snipmate dependencies
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "honza/vim-snippets"
+" Snipmate 
 Bundle 'garbas/vim-snipmate'
 
 filetype plugin indent on
