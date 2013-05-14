@@ -9,5 +9,6 @@ Bundle 'gmarik/vundle'
 
 " My bundles
 Bundle 'scrooloose/syntastic'
+Bundle 'scrooloose/nerdtree'
 
 filetype plugin indent on
