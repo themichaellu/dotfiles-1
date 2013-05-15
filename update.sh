@@ -2,6 +2,7 @@
 # required packages
 # sudo aptitude install zsh tidy
 
+# XXX vundle plugin for antigen do the same
 # bootstrap vim
 if [ ! -d $HOME/.vim/bundle/vundle ]; then
 	mv $HOME/.vim $HOME/.vim.old

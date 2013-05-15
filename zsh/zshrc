@@ -5,9 +5,27 @@ source $HOME/antigen/antigen.zsh
 antigen use oh-my-zsh
 
 # Bundles
-antigen bundle git
-antigen bundle szferi/oh-my-zsh plugins/mercurial
+# General
+antigen bundle command-not-found       # zsh support for ubuntu's command-not-found package
+# SCM
+antigen bundle git   # shortcuts and prompt decore
+antigen bundle szferi/oh-my-zsh plugins/mercurial   # shortcuts and git compatible prompt decore
 
+# Python support
+antigen bundle python      # pyfind, pygrep, pyclean
+antigen bundle virtualenv  # provides pompt decorator function
+if [ ! -d $HOME/env ]; then
+        mkdir -p $HOME/env
+fi
+export WORKON_HOME=$HOME/envs     # set home for virtualenv environments
+export DISABLE_VENV_CD=1          # turn of auto enviroment activition feature of virtualenvwrapper plugin
+export VIRTUALENV_DISTRIBUTE=1    # make distribute (instead of setuptools) the default 
+                                  # fortunately the --no-site-packages is default for a while
+antigen bundle virtualenvwrapper  # workon 
+antigen bundle pip                # autocompletion for pip
+
+# Vim/vundle
+antigen bundle vundle      # activate vundle and provide vundle-{install,update,clean} functions
 # Thene
 antigen theme szferi/dotfiles zsh/themes/szferi.zsh-theme
 
