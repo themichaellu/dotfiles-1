@@ -16,7 +16,7 @@ Bundle 'scrooloose/syntastic'
 " Do not check syntax in case of :wq and like
 let g:syntastic_check_on_wq=0
 let g:syntastic_enable_balloons = 0 " no mouse balloons
-let g:syntastic_echo_current_error=0 " no error echo
+let g:syntastic_echo_current_error=1 " no/yes error echo
 
 Bundle 'scrooloose/nerdtree'
 nmap \e :NERDTreeToggle<CR>
@@ -38,4 +38,6 @@ if $TERM == "xterm-256color" || $TERM == "screen-256color" || $COLORTERM == "gno
 	set t_Co=256
 endif
 
+" HTML
+Bundle 'closetag.vim'
 filetype plugin indent on
