@@ -1,6 +1,8 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
 
+set expandtab		       " convert tab to spaces
+
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
@@ -10,6 +12,7 @@ Bundle 'gmarik/vundle'
 " My bundles
 Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdtree'
+nmap \e :NERDTreeToggle<CR>
 
 " Snipmate dependencies
 Bundle "MarcWeber/vim-addon-mw-utils"
@@ -23,5 +26,9 @@ Bundle 'Lokaltog/powerline'
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 set laststatus=2 "Always display statusline in all windows
 set noshowmode	"Hide the default mode text
+" Make powerline colorfule
+if $TERM == "xterm-256color" || $TERM == "screen-256color" || $COLORTERM == "gnome-terminal"
+	set t_Co=256
+endif
 
 filetype plugin indent on
