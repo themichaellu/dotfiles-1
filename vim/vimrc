@@ -1,3 +1,4 @@
+" set hidden
 set nocompatible               " be iMproved
 filetype off                   " required!
 
@@ -10,7 +11,13 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " My bundles
+" Syntastic - static syntax checkers
 Bundle 'scrooloose/syntastic'
+" Do not check syntax in case of :wq and like
+let g:syntastic_check_on_wq=0
+let g:syntastic_enable_balloons = 0 " no mouse balloons
+let g:syntastic_echo_current_error=0 " no error echo
+
 Bundle 'scrooloose/nerdtree'
 nmap \e :NERDTreeToggle<CR>
 

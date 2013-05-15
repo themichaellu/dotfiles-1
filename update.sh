@@ -1,4 +1,7 @@
 #!/usr/bin/env zsh
+# required packages
+# sudo aptitude install zsh tidy
+
 # bootstrap vim
 if [ ! -d $HOME/.vim/bundle/vundle ]; then
 	mv $HOME/.vim $HOME/.vim.old
