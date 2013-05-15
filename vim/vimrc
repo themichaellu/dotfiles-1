@@ -18,4 +18,10 @@ Bundle "honza/vim-snippets"
 " Snipmate 
 Bundle 'garbas/vim-snipmate'
 
+" Powerline
+Bundle 'Lokaltog/powerline'
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+set laststatus=2 "Always display statusline in all windows
+set noshowmode	"Hide the default mode text
+
 filetype plugin indent on
