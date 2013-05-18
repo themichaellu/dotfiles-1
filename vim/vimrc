@@ -17,6 +17,7 @@ Bundle 'scrooloose/syntastic'
 let g:syntastic_check_on_wq=0
 let g:syntastic_enable_balloons = 0 " no mouse balloons
 let g:syntastic_echo_current_error=1 " no/yes error echo
+let g:syntastic_python_pylint_args='-f parseable -r n -i y -d C0103,C0301,C0111,R0903,R0904'
 
 Bundle 'scrooloose/nerdtree'
 nmap \e :NERDTreeToggle<CR>
@@ -40,4 +41,13 @@ endif
 
 " HTML
 Bundle 'closetag.vim'
+
+" Python
+set expandtab tabstop=4 shiftwidth=4 softtabstop=4
+:nmap \t :set expandtab tabstop=4 shiftwidth=4 softtabstop=4<CR>
+:nmap \T :set expandtab tabstop=8 shiftwidth=8 softtabstop=4<CR>
+:nmap \M :set noexpandtab tabstop=8 softtabstop=4 shiftwidth=4<CR>
+:nmap \m :set expandtab tabstop=2 shiftwidth=2 softtabstop=2<CR>
+Bundle 'davidhalter/jedi-vim'
+
 filetype plugin indent on
