@@ -3,3 +3,5 @@
 [user]
 	name = Ferenc Szalai
 	email = szferi@pionlab.com
+[push]
+	default = simple
