@@ -1,0 +1,8 @@
+- clean: ['~']
+
+- link:
+    ~/.dotfiles: ''
+    ~/.gitconfig: 'git/gitconfig'
+
+- shell:
+  - [git submodule update --init --recursive, Installing/updating submodules] 
