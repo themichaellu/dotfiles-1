@@ -1,3 +1,5 @@
+[core]
+	editor = vim
 [user]
 	name = Ferenc Szalai
 	email = szferi@pionlab.com
