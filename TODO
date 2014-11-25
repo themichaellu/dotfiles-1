@@ -1,0 +1,3 @@
+fix antigen with prezto
+	DEFULT_REPO URL
+	DEFAULT subdir for modules/plugins

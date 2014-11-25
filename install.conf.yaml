@@ -3,6 +3,12 @@
 - link:
     ~/.dotfiles: ''
     ~/.gitconfig: 'git/gitconfig'
+    ~/.zshrc: 
+      force: true
+      path: 'zsh/zshrc'
+
 
 - shell:
-  - [git submodule update --init --recursive, Installing/updating submodules] 
+  - [git submodule update --init --recursive, Installing/updating submodules]
+  - [sudo aptitude install -y fonts-inconsolata, Installing inconsolate font]
+#  - [./base16-gnome-terminal/base16-default.dark.sh]

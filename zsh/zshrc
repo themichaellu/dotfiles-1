@@ -1,0 +1,31 @@
+# Using antigen
+# repo change required for prezto
+export ANTIGEN_DEFAULT_REPO_URL=https://github.com/sorin-ionescu/prezto.git
+source ~/.dotfiles/antigen/antigen.zsh
+
+# with 
+antigen use prezto
+
+# Required for themes
+antigen bundle --loc=modules/prompt
+# Loads the command-not-found tool on Debian-based distributions.
+antigen bundle --loc=modules/command-not-found
+# Enhances the Git distributed version control system by providing aliases, functions and by exposing repository status information to prompts.
+antigen bundle --loc=modules/git
+
+# history
+antigen bundle --loc=modules/history
+antigen bundle --loc=modules/history-substring-search
+
+# antigen bundle --loc=modules/python
+
+# antigen bundle git
+# apply
+antigen apply 
+
+# setup prompt theme from peztro
+prompt skwp
+
+export WORKON_HOME=$HOME/envs
+export PROJECT_HOME=$HOME/Projects
+source /usr/local/bin/virtualenvwrapper.sh
