@@ -7,6 +7,7 @@
       force: true
       path: 'zsh/zshrc'
     ~/.vim/bundle/vundle:
+      create: true
       force: true
       path: 'vundle'
     ~/.vimrc: 'vim/vimrc'

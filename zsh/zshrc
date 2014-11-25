@@ -18,7 +18,7 @@ antigen bundle --loc=modules/history
 antigen bundle --loc=modules/history-substring-search
 
 # Vundle support
-antigen ~/.dotfiles/zsh/vundle.zsh --no-local-clone
+antigen bundle ~/.dotfiles/zsh/ --loc=vundle.zsh --no-local-clone
 
 # apply
 antigen apply 
