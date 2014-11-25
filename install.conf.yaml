@@ -6,7 +6,10 @@
     ~/.zshrc: 
       force: true
       path: 'zsh/zshrc'
-
+    ~/.vim/bundle/vundle:
+      force: true
+      path: 'vundle'
+    ~/.vimrc: 'vim/vimrc'
 
 - shell:
   - [git submodule update --init --recursive, Installing/updating submodules]
