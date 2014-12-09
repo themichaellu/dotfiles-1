@@ -1,3 +1,7 @@
 fix antigen with prezto
 	DEFULT_REPO URL
 	DEFAULT subdir for modules/plugins
+
+vim-ansible does not run 
+
+vim-nginx from nginx/contrib repo (no easy way)

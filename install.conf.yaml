@@ -11,8 +11,14 @@
       force: true
       path: 'vundle'
     ~/.vimrc: 'vim/vimrc'
-
+    ~/.i3/config: 
+      create: true
+      force: true
+      path: 'i3/config'
+    ~/.Xresources: 'Xresources'
+    
 - shell:
   - [git submodule update --init --recursive, Installing/updating submodules]
   - [sudo aptitude install -y fonts-inconsolata, Installing inconsolate font]
+  - [xrdb -merge ~/.Xresources, Merge X resources]
 #  - [./base16-gnome-terminal/base16-default.dark.sh]
