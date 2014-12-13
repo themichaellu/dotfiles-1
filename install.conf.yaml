@@ -15,11 +15,10 @@
       create: true
       force: true
       path: 'i3/config'
-    ~/.Xresources: 'Xresources'
     ~/.profile: 
       force: true
       path: 'profile'
-
+    ~/.Xresources: 'x11/Xresources'
     
 - shell:
   - [git submodule update --init --recursive, Installing/updating submodules]
