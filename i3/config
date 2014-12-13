@@ -151,3 +151,24 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 1 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 1 -- -5% #decrease sound volume
+bindsym XF86AudioMute exec pactl set-sink-mute 1 toggle # mute sound
+
+workspace 1 output LVDS1
+workspace 2 output LVDS1
+workspace 3 output LVDS1
+workspace 4 output VGA1
+
+exec i3-sensible-terminal
+exec chromium-browser
+for_window [title="New Tab"] move workspace number 2
+# applets
+# network manager to wifi
+bindsym $mod+n exec /usr/bin/wicd-gtk
+# for gnome/gtk applications
+exec --no-startup-id dconf write /org/gnome/settings-daemon/plugins/cursor/active false
+exec --no-startup-id /usr/bin/gnome-settings-daemon
+

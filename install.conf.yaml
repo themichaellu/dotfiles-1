@@ -16,9 +16,14 @@
       force: true
       path: 'i3/config'
     ~/.Xresources: 'Xresources'
+    ~/.profile: 
+      force: true
+      path: 'profile'
+
     
 - shell:
   - [git submodule update --init --recursive, Installing/updating submodules]
   - [sudo aptitude install -y fonts-inconsolata, Installing inconsolate font]
+  - [sudo aptitude install -y gnome-settings-daemon, Installing settings daemon]
   - [xrdb -merge ~/.Xresources, Merge X resources]
 #  - [./base16-gnome-terminal/base16-default.dark.sh]
