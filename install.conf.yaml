@@ -15,7 +15,7 @@
       create: true
       force: true
       path: 'i3/config'
-    ~/.Xresources: 'Xresources'
+    ~/.Xresources: 'x11/Xresources'
     
 - shell:
   - [git submodule update --init --recursive, Installing/updating submodules]

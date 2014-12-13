@@ -1,0 +1,19 @@
+install ubuntu server 14.10
+aptiude update & upgrade
+dpkg-reconfigure console-setup  TerminusBold 32x16
+aptitude install i3 lightdm rxvt-unicode-256color x11-xserver-utils zsh python-setuptools
+                    fglrx-updates fglrx-amdcccle-updates
+vim /etc/defaults/grouo GROUB_GFXMODE=1024x768
+update-grub
+
+easy_install pip
+pip install virtualenvwrapper
+
+chsh szferi -s /bin/zsh
+
+exit, login
+
+vundle
+
+cvt 1920 1080 60
+copy this modeline to /etc/X11/xorg.conf
