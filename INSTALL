@@ -1,10 +1,21 @@
 install ubuntu server 14.10
+sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
 aptiude update & upgrade
 dpkg-reconfigure console-setup  TerminusBold 32x16
 aptitude install i3 lightdm gnome-terminal x11-xserver-utils zsh python-setuptools
                     fglrx-updates fglrx-amdcccle-updates ntp chromium-browser
+                    transmission-gtk skype virtualbox gnome-settings-daemon
+                    alsa-utils pavucontrol
 vim /etc/defaults/grouo GROUB_GFXMODE=1024x768
 update-grub
+# create swap
+sudo dd if=/dev/zero of=/var/SWAP bs=1M count=8000
+sudo mkswap /var/SWAP
+sudo chown root:root /var/SWAP
+sudo chmod 0600 /var/SWAP
+root: echo "/var/SWAP none swap sw 0 0" >> /etc/fstab
+sudo swapon -a
+
 
 easy_install pip
 pip install virtualenvwrapper
@@ -23,9 +34,16 @@ aptitude install python-gpgme
 dpkg -i dropbox_
 dropbox start -i
 dropbox start # to i3
-
+sysctl -w fs.inotify.max_user_watches=100000
 
 gnome-terminal:
+    show menubar off
     load color
     edit config: add inconsolate as a font
     default config: not default
+
+# virtualbox raw disk windows 8
+# /dev/sda accepsable by root and users in disk group
+sudo usermod -a -G disk szferi
+# not include Linux partititon
+VBoxManage internalcommands createrawvmdk -filename windows8_raw.vmdk -rawdisk /dev/sda -partitions 1,2,3,4,6
