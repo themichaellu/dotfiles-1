@@ -1,8 +1,8 @@
 install ubuntu server 14.10
 aptiude update & upgrade
 dpkg-reconfigure console-setup  TerminusBold 32x16
-aptitude install i3 lightdm rxvt-unicode-256color x11-xserver-utils zsh python-setuptools
-                    fglrx-updates fglrx-amdcccle-updates
+aptitude install i3 lightdm gnome-terminal x11-xserver-utils zsh python-setuptools
+                    fglrx-updates fglrx-amdcccle-updates ntp chromium-browser
 vim /etc/defaults/grouo GROUB_GFXMODE=1024x768
 update-grub
 
@@ -17,3 +17,15 @@ vundle
 
 cvt 1920 1080 60
 copy this modeline to /etc/X11/xorg.conf
+
+download dropbox
+aptitude install python-gpgme
+dpkg -i dropbox_
+dropbox start -i
+dropbox start # to i3
+
+
+gnome-terminal:
+    load color
+    edit config: add inconsolate as a font
+    default config: not default

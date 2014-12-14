@@ -5,3 +5,5 @@ fix antigen with prezto
 vim-ansible does not run 
 
 vim-nginx from nginx/contrib repo (no easy way)
+
+http://code.stapelberg.de/git/i3status/tree/contrib/wrapper.py
