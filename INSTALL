@@ -5,7 +5,7 @@ dpkg-reconfigure console-setup  TerminusBold 32x16
 aptitude install i3 lightdm gnome-terminal x11-xserver-utils zsh python-setuptools
                     fglrx-updates fglrx-amdcccle-updates ntp chromium-browser
                     transmission-gtk skype virtualbox gnome-settings-daemon
-                    alsa-utils pavucontrol
+                    alsa-utils pavucontrol vlc
 vim /etc/defaults/grouo GROUB_GFXMODE=1024x768
 update-grub
 # create swap
