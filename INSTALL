@@ -5,7 +5,11 @@ dpkg-reconfigure console-setup  TerminusBold 32x16
 aptitude install i3 lightdm gnome-terminal x11-xserver-utils zsh python-setuptools
                     fglrx-updates fglrx-amdcccle-updates ntp chromium-browser
                     transmission-gtk skype virtualbox gnome-settings-daemon
-                    alsa-utils pavucontrol vlc
+                    alsa-utils pavucontrol vlc liberoffice
+                    python-dev build-essential gfortran libatlas-dev libatlas-base-dev libatlas3-base
+                    gnome-commander viewnior evince gnome-theme-standard
+                    file-roller pepperflashplugin-nonfree
+
 vim /etc/defaults/grouo GROUB_GFXMODE=1024x768
 update-grub
 # create swap

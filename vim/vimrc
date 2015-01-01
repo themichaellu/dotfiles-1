@@ -45,6 +45,9 @@ Plugin 'othree/html5.vim'
 Plugin 'bling/vim-airline'
 set laststatus=2  " statusline appears all the time 
 
+" Go lang support
+Plugin 'fatih/vim-go'
+
 filetype plugin indent on
 "VIM Ansible YAML
 Plugin 'chase/vim-ansible-yaml'
