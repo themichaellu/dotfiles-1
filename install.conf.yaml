@@ -19,6 +19,7 @@
       force: true
       path: 'profile'
     ~/.Xresources: 'x11/Xresources'
+    ~/.hgrc: hgrc
     
 - shell:
   - [git submodule update --init --recursive, Installing/updating submodules]
