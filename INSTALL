@@ -51,3 +51,6 @@ gnome-terminal:
 sudo usermod -a -G disk szferi
 # not include Linux partititon
 VBoxManage internalcommands createrawvmdk -filename windows8_raw.vmdk -rawdisk /dev/sda -partitions 1,2,3,4,6
+
+
+INstall go

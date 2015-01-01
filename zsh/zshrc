@@ -30,3 +30,5 @@ export WORKON_HOME=$HOME/envs
 export PROJECT_HOME=$HOME/Projects
 source /usr/local/bin/virtualenvwrapper.sh
 source $HOME/.dotfiles/base16-shell/base16-default.dark.sh
+export GOPATH=$HOME/.go
+export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
