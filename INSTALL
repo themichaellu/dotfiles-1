@@ -9,6 +9,10 @@ aptitude install i3 lightdm gnome-terminal x11-xserver-utils zsh python-setuptoo
                     python-dev build-essential gfortran libatlas-dev libatlas-base-dev libatlas3-base
                     gnome-commander viewnior evince gnome-theme-standard
                     file-roller pepperflashplugin-nonfree
+                    pkg-config
+                    libzmq3-dev
+                    gimp
+                    libffi-dev
 
 vim /etc/defaults/grouo GROUB_GFXMODE=1024x768
 update-grub
@@ -52,5 +56,6 @@ sudo usermod -a -G disk szferi
 # not include Linux partititon
 VBoxManage internalcommands createrawvmdk -filename windows8_raw.vmdk -rawdisk /dev/sda -partitions 1,2,3,4,6
 
+Install go
+Install vagrant
 
-INstall go

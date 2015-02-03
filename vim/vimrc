@@ -18,6 +18,9 @@ Plugin 'bling/vim-airline'
 Plugin 'fatih/vim-go'
 "VIM Ansible YAML
 Plugin 'chase/vim-ansible-yaml'
+"Editorconfig. project specific vim config
+Plugin 'editorconfig/editorconfig-vim'
+
 call vundle#end() " required
 filetype plugin indent on "required
 " === SETTINGS ===
