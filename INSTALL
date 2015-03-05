@@ -13,6 +13,8 @@ aptitude install i3 lightdm gnome-terminal x11-xserver-utils zsh python-setuptoo
                     libzmq3-dev
                     gimp
                     libffi-dev
+                    icedtea-plugin
+                    libxslt-dev libboost-python-dev
 
 vim /etc/defaults/grouo GROUB_GFXMODE=1024x768
 update-grub
@@ -59,3 +61,5 @@ VBoxManage internalcommands createrawvmdk -filename windows8_raw.vmdk -rawdisk /
 Install go
 Install vagrant
 
+
+sudo ln -s /usr/bin/nodejs /usr/bin/node
